@@ -1,0 +1,121 @@
+*{
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+/* lavoro sui menu */
+.menu{
+  width: 112px;
+  position: fixed;
+  top:0;
+  left:15px;
+  z-index: 2;
+  /* background: red; */
+}
+.menu img{
+  height:50px;
+}
+.pulsante_menu{
+  width: 111px;
+  height: 55px;
+  border: 3px solid #F9595F;
+  border-radius: 10px;
+  margin: 20px 0;
+
+}
+.active {
+  background-color: rgba(249, 88, 94, 0.45);
+  /* background: rgba(#f9585e, 0.63); */
+}
+
+.pulsante_menu a{
+  line-height: 50px;
+  vertical-align: middle;
+  text-align: center;
+  display: block;
+  color: #F9595F;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  text-shadow: 1px 1px 3px #fa5158;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.pulsante_menu a:hover{
+  text-shadow: none;
+  color: #fff;
+  background-color: #F9595F;
+  text-transform: uppercase;
+}
+
+main{
+  width: 75%
+  margin: auto;
+  text-align: center;
+  margin-top: 25px;
+}
+.container{
+  display: inline-block;
+  position: relative;
+  width: 800px;
+}
+
+/* lavoro sui box */
+.box{
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+  margin-top: 10px;
+  /* box-shadow: 5px 5px 4px #000000; */
+  box-shadow: 5px 5px 4px #fa5158;
+}
+.box:hover{
+  cursor: pointer;
+  box-shadow: none;
+}
+.box:hover .overlay{
+  display: none;
+}
+.box:hover .text{
+  text-shadow: none;
+  text-transform: uppercase;
+  color:#fa5158;
+}
+
+/* sfondi */
+.box1{
+  background-image: url(../img/roma.jpg);
+}
+.box2{
+  background-image: url(../img/parigi.jpg);
+}
+.box3{
+  background-image: url(../img/berlino.jpg);
+}
+/* opacità */
+.overlay{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1
+}
+/* testi */
+.text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: 5px 5px 4px #fa5158;
+  /* text-shadow: 5px 5px 4px #000000; */
+  text-transform: capitalize;
+}
+footer{
+  margin-top: 30px;
+  text-align: center;
+}

@@ -1,0 +1,65 @@
+*{
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+body{
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+}
+.container{
+  display: inline-block;
+  position: relative;
+  width: 800px;
+}
+
+/* lavoro sui box */
+.box{
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+  margin-top: 10px;
+}
+.box:hover{
+  cursor: pointer;
+}
+.box:hover .overlay{
+  display: none;
+}
+
+/* sfondi */
+.box1{
+  background-image: url(../img/roma.jpg);
+}
+.box2{
+  background-image: url(../img/parigi.jpg);
+}
+.box3{
+  background-image: url(../img/berlino.jpg);
+}
+/* opacità */
+.overlay{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1
+}
+/* testi */
+.text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: 5px 5px 4px #000000;
+  text-transform: capitalize;
+}
+footer{
+  margin-top: 30px;
+}
